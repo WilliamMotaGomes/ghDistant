@@ -6,7 +6,7 @@ Algo HelloWorld {
         Fond d'ecran Jaune
         Configurer la fenetre sur ‘exitOnClose’
         Créer un label avec du texte centré et contenant le texte HELLO_WORLD_TEXT 
-        Créer la couleur jaune
+        Créer la couleur violette
         Mettre la couleur jaune sur le label
         Ajouter le label sur la fenetre
         Afficher la fenêtre
