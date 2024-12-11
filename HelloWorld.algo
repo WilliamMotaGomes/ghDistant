@@ -1,6 +1,7 @@
 Algo HelloWorld {
     fonction principale {
         Créer une fenetre de titre HELLO_WORLD_TITLE
+        Couleur de fenetre vert
         Mettre la dimension à 300, 300
         Fond d'ecran Jaune
         Configurer la fenetre sur ‘exitOnClose’
