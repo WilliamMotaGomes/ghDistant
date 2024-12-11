@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Emplacement du fichier généré
+OUTPUT_FILE="suivi/commitInfo.txt"
+
+# Demander confirmation pour générer le fichier
+read -p "Voulez-vous enregistrer les informations de ce commit (y/[n]) ? " yn < /dev/tty
+yn=${yn:-n}
+
+case $yn in
+    [Yy]* )
+        mkdir -p suivi
+        echo "Commit vérifié le $(date)" > "$OUTPUT_FILE"
+        git add "$OUTPUT_FILE"
+        echo "Fichier généré : $OUTPUT_FILE"
+        ;;
+    [Nn]* )
+        echo "Aucune action effectuée."
+        ;;
+    *)
+        echo "Réponse invalide. Annulation."
+        exit 1
+        ;;
+esac
+
+exit 0
